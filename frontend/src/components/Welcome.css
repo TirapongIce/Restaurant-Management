@@ -1,0 +1,46 @@
+.welcome-container {
+    background-image: url('../assets/Welcome.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-content {
+    text-align: center;
+    color: white;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.welcome-title {
+    font-size: 10em;
+    font-weight: bold;
+    animation: slideIn 3s ease-in-out;
+    background: azure;
+    padding: 60px;
+    opacity: 0.8;
+    border-radius: 20px;
+    color: #1d1c1f;
+}
+
+.welcome-text {
+    font-size: 1.5em;
+    margin-top: 0px;
+    animation: fadeIn 5s ease-in-out;
+
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
